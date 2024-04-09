@@ -48,7 +48,7 @@ function addToList(repoItem) {
     listItem.classList.add('repo-list__item');
     listItem.innerHTML = `
       <div class="item-info">
-        <div>name: ${repoItem.full_name}</div>
+        <div>Name: ${repoItem.full_name}</div>
         <div>Owner: ${repoItem.owner.login}</div>
         <div>Stars: ${repoItem.stargazers_count}</div>
       </div>
