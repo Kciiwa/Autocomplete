@@ -1,0 +1,138 @@
+.page-body {
+    background-color: #0d1117;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    color: #e6edf3;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.page-header {
+    background-color: #010409;
+    height: auto;
+    padding: 16px;
+    border-bottom: 1px solid #30363d;
+}
+
+.title {
+    color: #e6edf3;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    margin: 0;
+}
+
+.page-main {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search-repo {
+    flex-basis: 40%;
+    flex-shrink: 1;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.form__search {
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    border-color: #30363d;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    color: #e6edf3;
+    background-color: transparent;
+}
+
+.autocomplete {
+    display: flex;
+    flex-direction: column;
+}
+
+.autocomplete__item {
+    border: 1px solid #30363d;
+    padding: 10px;
+}
+
+.autocomplete__item:hover {
+    background-color: #21262c;
+    cursor: pointer;
+}
+
+.repo-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #30363d;
+    border-radius: 20px;
+    min-height: 100px;
+
+    flex-basis: 40%;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.repo-list__item {
+    padding: 16px;
+    display: flex;
+    gap: 10px;
+}
+
+.repo-list__item:not(:last-child) {
+    border-bottom: 1px solid #30363d;
+}
+
+.item-info {
+    display: grid;
+    gap: 5px;
+}
+
+.delete-btn {
+    position: relative;
+    margin-left: auto;
+    border: 1px solid #848d97;
+    background-color: #848d97;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.delete-btn::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 2px;
+    height: 20px;
+    background-color: #0d1117;
+    transform: rotate(45deg);
+}
+
+.delete-btn::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 2px;
+    height: 20px;
+    background-color: #0d1117;
+    transform: rotate(135deg);
+}
+
+.delete-btn:hover {
+    background-color: #a8b0ba;
+}
+
+
+.hover {
+    background-color: #21262c;
+}
+
+@media (max-width: 600px) {
+    .page-main {
+        flex-direction: column;
+    }
+}
